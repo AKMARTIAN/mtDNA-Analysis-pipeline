@@ -41,6 +41,10 @@ bcftools mpileup -Q20 -Ou -f <MTDNA_Reference.fa>
 <sorted_output.bam> | bcftools call -cv --ploidy 1 -f GQ -Ou |
 bcftools filter -i 'QUAL>20' -Ov -o <filtered_results.vcf>
 ```
+## Basecalling on Dorado
+```bash
+dorado basecaller <kitname> <basecalling_model> /path/to/pod5_pass > /path/to/desired_ouput_directory/output.fastq
+```
 ## Input/Output Formats
 - **Input**: FASTQ file from Oxford Nanopore sequencing.
 - **Intermediate**: SAM/BAM files for aligned reads.
@@ -55,10 +59,6 @@ date.
 - Quality thresholds and other parameters in `bcftools` commands can be adjusted based on
 specific project requirements.
 - For large datasets, consider increasing system resources to improve processing times.
-## Basecalling on Dorado
-```bash
-dorado basecaller <kitname> <basecalling_model> /path/to/pod5_pass > /path/to/desired_ouput_directory/output.fastq
-```
 ## Contact
 For questions or issues related to this pipeline, please contact [Ahmed
 Khalid/a.khalid27@outlook.com].
