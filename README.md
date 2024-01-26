@@ -56,7 +56,9 @@ date.
 specific project requirements.
 - For large datasets, consider increasing system resources to improve processing times.
 ## Basecalling on Dorado
+```bash
 dorado basecaller <kitname> <basecalling_model> /path/to/pod5_pass > /path/to/desired_ouput_directory/output.fastq
+```
 ## Contact
 For questions or issues related to this pipeline, please contact [Ahmed
 Khalid/a.khalid27@outlook.com].
