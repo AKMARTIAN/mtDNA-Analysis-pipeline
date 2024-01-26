@@ -47,8 +47,7 @@ bcftools filter -i 'QUAL>20' -Ov -o <filtered_results.vcf>
 - **Output**: VCF file containing the filtered list of variants.
 ## Dependencies
 - `minimap2` for read alignment.
--
-`samtools` for manipulation of SAM/BAM files.
+- `samtools` for manipulation of SAM/BAM files.
 - `bcftools` for variant calling and filtering.
 ## Usage Notes
 - Ensure that the reference mtDNA file (`MTDNA_Reference.fna`/`.fa`) is accurate and up-to-
