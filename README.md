@@ -37,7 +37,7 @@ bcftools filter -i 'QUAL>20' -Ov -o <filtered_results.vcf>
 ```
 (Filtering by Base Quality)
 ```bash
-bcftools mpileup -Q20 -Ou -f <MTDNA_Reference.fa>
+bcftools mpileup -Q20 -q20 -Ou -f <MTDNA_Reference.fa>
 <sorted_output.bam> | bcftools call -cv --ploidy 1 -f GQ -Ou |
 bcftools filter -i 'QUAL>20' -Ov -o <filtered_results.vcf>
 ```
